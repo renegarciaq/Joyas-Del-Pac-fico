@@ -8,17 +8,17 @@ function Barra() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Joyas del Pacífico</Navbar.Brand>
+        <Navbar.Brand href="/">Tienda del Pacífico</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#link">Quienes Somos</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Relojes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"> Anillos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Collares</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Aros</NavDropdown.Item>
+              <NavDropdown.Item href="/">Todo</NavDropdown.Item>
+              <NavDropdown.Item href="/category/men's clothing">Hombre</NavDropdown.Item>
+              <NavDropdown.Item href="/category/women's clothing">Mujer</NavDropdown.Item>
+              <NavDropdown.Item href="/category/jewelery">Joyeria</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
