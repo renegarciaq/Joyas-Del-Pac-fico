@@ -1,19 +1,17 @@
-import { useState } from "react";
-
-const ItemCount = () => {
-    const [contador, setContador] = useState(0)
-    const stock = 10
+const ItemCount = ({contador, actualizaValor, stock}) => {
+    // const [contador, setContador] = useState(0)
+    // const stock = 10
     const sumar = () => {
         if (stock === contador){
             return
         }
-        setContador(contador + 1)
+        actualizaValor(contador + 1)
     };
     const restar = () => {
         if(contador === 0){
             return
         }
-        setContador(contador - 1)
+        actualizaValor(contador - 1)
     };
   return (
     <div>
