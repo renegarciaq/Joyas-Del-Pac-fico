@@ -17,14 +17,17 @@ function Barra() {
             <Nav.Link href="#link">Quienes Somos</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/">Todo</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/men's clothing">Hombre</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/women's clothing">Mujer</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/category/jewelery">Joyeria</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Aros">Aros</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Anillos">Anillos</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Collares">Collares</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Relojes">Relojes</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
+      <Nav.Link as={Link} to='/cart'>
       <CartWidget />
+      </Nav.Link>
     </Navbar>
   );
 }
